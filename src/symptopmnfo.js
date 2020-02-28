@@ -58,15 +58,15 @@ export class MyComponent extends React.Component {
 
 
   render() {
-    return (
-      <StackGrid columnWidth={150}>
+    return ( 
+      <StackGrid columnWidth={"35.33%"}>
         <div key="key1">Item 1</div>
         <div key="key2">
         </div>
         <div key="key3">Item 3</div>
         <div key="key4">Item 1</div>
         <div key="key5">Item 2</div>
-        <div key="key6"gutterHeight={90}>
+        <div key="key6">
         </div>
         <div key="key7">Item 1</div>
         <div key="key8">Item 2</div>

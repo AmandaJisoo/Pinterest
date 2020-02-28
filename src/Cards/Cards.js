@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
-import Card from './CardsUI';
+import Card from './CardUI';
 import img1 from '../assets/index.jpg';
+import StackGrid from "react-stack-grid";
 class Cards extends Component {
     constructor(props) {
         super(props);
@@ -8,19 +9,17 @@ class Cards extends Component {
     }
     render() {
         return(
-            <div className="container-fluid d-flex justify-content-center"> 
-                <div className="row">
-                <div className="col-md-4">
+            <StackGrid>
+                 <div key="key1">
                     <Card imgsrc={img1} title="Console"/>
                 </div> 
-                <div className="col-md-4"> 
+                <div key="key2">
                     <Card imgsrc={img1} title="Console2"/>
                 </div>
-                <div className="col-md-4">
+                <div key="key3">
                     <Card imgsrc={img1} title="Console3"/>
-                </div>             s               
-                </div>
-            </div>
+                </div>                          
+            </StackGrid>
         );
     }
 }
