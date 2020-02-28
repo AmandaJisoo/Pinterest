@@ -1,51 +1,73 @@
-// import React, { Component } from 'react';
-// import { directive } from '@babel/types';
-// import { PinterestGrid, PinterestPinWidget } from './react-pinterest';
-
-// class SymptomInfo extends Component {
-//     // In the constructor, set the initial state of search to empty string
-//     // Also *bind `this`* to the handleChange function
-//     constructor(props) {
-//         // super(props);
-//         // this.handleChange = this.handleChange.bind(this);
-//         // this.state = {
-//     }
-//     render() {
-//         return (
-//             <PinterestGrid gutter={gutter}>
-//             <PinterestPinWidget pin="530158187357124374" />
-//             <PinterestPinWidget pin="356417757989339525" />
-//             <PinterestPinWidget pin="356417757986524080" />
-//             <PinterestPinWidget pin="356417757986724718" />
-//             <PinterestPinWidget pin="356417757988564358" />
-//             <PinterestPinWidget pin="356417757988206582" />
-//             <PinterestPinWidget pin="202802789445693269" />
-//             <PinterestPinWidget pin="89438742571585339" />
-//             <PinterestPinWidget pin="232850243203755319" />
-//             <PinterestPinWidget pin="137008013639035297" />
-//             <PinterestPinWidget pin="264797653065817757" />
-//             <PinterestPinWidget pin="144467100519920447" />
-//             </PinterestGrid>
-//         )
-//     } 
-// }  
-
 
 import React, { Component } from "react";
 import StackGrid from "react-stack-grid";
+import  "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
 export class MyComponent extends React.Component {
+
+  // MediaCard = () => {
+  //   const useStyles = makeStyles({
+  //     root: {
+  //       maxWidth: 345,
+  //     },
+  //     media: {
+  //       height: 140,
+  //     },
+  //   });
+    
+  //   const classes = useStyles();
+  //   return (
+  //       <Card className={classes.root}>
+  //       <CardActionArea>
+  //           <CardMedia
+  //           className={classes.media}
+  //           image="/static/images/cards/contemplative-reptile.jpg"
+  //           title="Contemplative Reptile"
+  //           />
+  //           <CardContent>
+  //           <Typography gutterBottom variant="h5" component="h2">
+  //               Lizard
+  //           </Typography>
+  //           <Typography variant="body2" color="textSecondary" component="p">
+  //               Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+  //               across all continents except Antarctica
+  //           </Typography>
+  //           </CardContent>
+  //       </CardActionArea>
+  //       <CardActions>
+  //           <Button size="small" color="primary">
+  //           Share
+  //           </Button>
+  //           <Button size="small" color="primary">
+  //           Learn More
+  //           </Button>
+  //       </CardActions>
+  //       </Card>
+  //   );
+  // }
+
+
   render() {
     return (
-      <StackGrid
-        columnWidth={150}
-      >
+      <StackGrid columnWidth={150}>
         <div key="key1">Item 1</div>
-        <div key="key2">Item 2</div>
+        <div key="key2">
+        </div>
         <div key="key3">Item 3</div>
         <div key="key4">Item 1</div>
         <div key="key5">Item 2</div>
-        <div key="key6">Item 3</div>
+        <div key="key6"gutterHeight={90}>
+        </div>
         <div key="key7">Item 1</div>
         <div key="key8">Item 2</div>
         <div key="key9">Item 3</div>
