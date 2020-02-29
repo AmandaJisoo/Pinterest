@@ -20,7 +20,7 @@ class Cards extends Component {
                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."],
             ["https://cdn.pixabay.com/photo/2012/11/26/13/58/cat-67345__480.jpg",
                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."],
-            ["https://cdn.pixabay.com/photo/2012/11/26/13/58/cat-67345__480.jpg",
+            ["https://cdn.pixabay.com/photo/2015/04/16/15/21/cat-725793__480.jpg",
                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."]
         ]
 
@@ -43,11 +43,11 @@ class Cards extends Component {
         } = this.props;
 
         return(
-            // <div>
-            <StackGrid columnWidth={width <= 500 ? '30%' : '40%'}>
+            <div>
+            <StackGrid columnWidth={width <= 768 ? '100%' : '40.33%'}>
                 {this.create()}
             </StackGrid>
-            // </div>
+            </div>
         );
     }
 }
