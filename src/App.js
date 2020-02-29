@@ -10,8 +10,6 @@ export class App extends React.Component {
     return (
       <div className="App">
       <MyTitle1></MyTitle1>
-      {/* <MyComponent></MyComponent> */}
-      {/* <Card></Card> */}
       <Cards></Cards>
       </div>
     );

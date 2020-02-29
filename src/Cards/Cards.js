@@ -2,38 +2,32 @@ import React, {Component} from 'react'
 import Card from './CardUI';
 import img1 from '../assets/index.jpg';
 import StackGrid from "react-stack-grid";
-import cardimage from './warningpic'
+import data from './warningpic.js';
+
 class Cards extends Component {
     constructor(props) {
         super(props);
         this.state= {};
     }
-    create = () => {
-        let ele = [];
-        let cards = Object.entries.cardimage.map(([image, commentary]) => {
-            ele.push(<div key={i}>
-                <Card imgsrc={image} comment={commentary}/>
-                </div> 
-            )
-        })
-        return ele;
-    }
+    
+    // create = () => {
+    //     let ele = [];
+    //     for (let i = 0; data.length; i++) {
+    //         // console.log("pnted");
+    //         ele.push(
+    //             <Card key={data[i][0]} imgsrc={data[i][0]} comment={data[i][1]}/>
+    //         )
+    //     }
+    //     return ele;
+    // }
+
     render() {
+        // let res = this.create();
         return(
             <div>
-                <StackGrid columnWidth={"66%"}>
-                    {/* <div key="key1">
-                        <Card imgsrc={img1} title="Console"/>
-                    </div> 
-                    <div key="key2">
-                        <Card imgsrc={img1} title="Console2"/>
-                    </div>
-                    <div key="key3">
-                        <Card imgsrc={img1} title="Console3"/>
-                    </div>                           */}
-                    {this.create()}
-                </StackGrid>
-                </div>
+            <StackGrid columnWidth={"66%"}>
+            </StackGrid>
+            </div>
         );
     }
 }
