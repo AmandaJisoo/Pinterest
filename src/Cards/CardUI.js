@@ -1,5 +1,6 @@
 import React from 'react';
 import img1 from '../assets/index.jpg'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './card-style.css'
 
 const Card = props => {
@@ -9,9 +10,8 @@ const Card = props => {
                 <img src={props.imgsrc} alt="Image of signs" className="card-img-top"/>
             </div>
             <div className="card-body text-dark">
-                {/* <h4 className="card-title">{props.title}</h4> */}
-                <p className="card-text-secondary">
-                    {this.props.comment}
+                <p className="text-left">
+                    {props.comment}
                 </p>
                 <a href="#" className="btn btn-outline-success">Go Anywhere</a>
             </div>  
