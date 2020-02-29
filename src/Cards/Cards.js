@@ -27,7 +27,6 @@ class Cards extends Component {
         // console.log(Data.length);
         let ele = [];
         for (let i = 0; i < Data.length; i++) {
-            // console.log("pnted");
             ele.push(
                 <Card key={Data[i][0]} imgsrc={Data[i][0]} comment={Data[i][1]}/>
             )
