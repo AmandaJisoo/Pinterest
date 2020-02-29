@@ -44,7 +44,7 @@ class Cards extends Component {
 
         return(
             <div>
-            <StackGrid columnWidth={width <= 768 ? '100%' : '40.33%'}>
+            <StackGrid columnWidth={width <= 500 ? '50%' : '20.33%'} gutterWidth={3} gutterWidth={6.5}>
                 {this.create()}
             </StackGrid>
             </div>
