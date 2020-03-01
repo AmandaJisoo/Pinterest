@@ -1,0 +1,14 @@
+.userBoard-title {
+    margin:auto;
+    line-height:51px;
+    margin:auto;
+    line-height:51px;
+    vertical-align:middle;
+    text-align: "center";
+    margin-bottom: 50px;
+}
+
+.list-of-comment {
+    color: black;
+    border: 5px double #1C6EA4;
+}
