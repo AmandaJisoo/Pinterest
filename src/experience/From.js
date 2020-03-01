@@ -33,12 +33,9 @@ export default class CommentForm extends Component {
     });
   };
 
-  /**
-   * Form submit handler
-   */
-  onSubmit(e) {
-    // prevent default form submission
-    e.preventDefault();
+
+  onSubmit(event) {
+    event.preventDefault();
 
     if (!this.isFormValid()) {
       this.setState({ error: "All fields are required." });

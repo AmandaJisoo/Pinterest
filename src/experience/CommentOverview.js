@@ -12,7 +12,7 @@ class CommentOverview extends Component {
           loading: false
         };
     
-        this.addComment = this.addComment.bind(this);
+        this.addComment = this.addUserComment.bind(this);
       }
     
       componentDidMount() {
@@ -37,7 +37,7 @@ class CommentOverview extends Component {
        * Add new comment
        * @param {Object} comment
        */
-      addComment(comment) {
+      addUserComment(comment) {
         this.setState({
           loading: false,
           comments: [comment, ...this.state.comments]
@@ -48,17 +48,17 @@ class CommentOverview extends Component {
         return (
           <div className="container">
             <header className="userBoard-title">
-              <h1>
-              Share your inspiring journey
+              <h1 className="text-center">
+              Share your Inspiring journey
               </h1>
             </header>
     
             <div className="row">
-              <div className="col-4  pt-3 border-right">
+              <div className="col-sm-8  col-md-4 pt-3 border-right">
                 <h2></h2>
-                <CommentForm addComment={this.addComment} />
+                <CommentForm addComment={this.addUserComment} />
               </div>
-              <div className="col-8  pt-3 bg-white list-of-comment">
+              <div className="col-sm-8  col-md-8 pt-3 bg-white list-of-comment">
                 <CommentList
                   loading={this.state.loading}
                   comments={this.state.comments}

@@ -6,12 +6,12 @@ export default function CommentList(props) {
     <div className="commentList">
       <h5 className="text-muted mb-4">
         <span className="badge badge-success">{props.comments.length}</span>{" "}
-        Comment{props.comments.length > 0 ? "s" : ""}
+        Submit{props.comments.length > 0 ? "props.comments.length" : ""}
       </h5>
 
-      {props.comments.length === 0 && !props.loading ? (
+      {props.comments.length == 0 && !props.loading ? (
         <div className="alert text-center alert-info">
-          Be the first to comment!
+          Be the first Inspiration
         </div>
       ) : null}
 

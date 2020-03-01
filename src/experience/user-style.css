@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Oswald|PT+Sans&display=swap');
 .userBoard-title {
     margin:auto;
     line-height:51px;
@@ -11,4 +12,11 @@
 .list-of-comment {
     color: black;
     border: 5px double #1C6EA4;
+}
+
+h1 {
+    font-family: 'Oswald','Noto Sans', 'PT Sans';
+}
+body {
+    background-color: white;
 }
