@@ -7,6 +7,7 @@
     vertical-align:middle;
     text-align: "center";
     margin-bottom: 50px;
+    /* margin: auto; */
 }
 
 .list-of-comment {
@@ -14,8 +15,14 @@
     border: 5px double #1C6EA4;
 }
 
+.title-container {
+    display: 'flex';
+    align-items: 'center';
+    justify-content: 'center';
+}
 h1 {
     font-family: 'Oswald','Noto Sans', 'PT Sans';
+    display: inline;
 }
 body {
     background-color: white;

@@ -13,6 +13,12 @@
     overflow: hidden;
 }
 
+
+.snoppy-gif {
+    margin-left: 15px;
+    width: 100px;
+    height:100px;
+}
 .card-img-top {
     height: 30%;
     height: auto;
@@ -25,7 +31,9 @@
     transform: scale(1.1);
 }
 
-
+.sign-name {
+    font-size: 20px;
+}
 @media (min-width:500px) {
     .card-text {
         font-size: 0.9rem;

@@ -48,11 +48,13 @@ class CommentOverview extends Component {
         return (
           <div className="container">
             <header className="userBoard-title">
-              <h1 className="text-center">
+            {/* <div className="title-container"> */}
+            <h1 className="text-center">
               Share your Inspiring journey
-              </h1>
+              {/* <img src={require('../assets/inspire.gif')} className="snoppy-gif"/> */}
+            </h1>
+            {/* </div> */}
             </header>
-    
             <div className="row">
               <div className="col-sm-8  col-md-4 pt-3 border-right">
                 <h2></h2>

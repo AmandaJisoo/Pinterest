@@ -11,7 +11,7 @@ const Card = props => {
                 <img src={require('../assets/' + props.imgsrc)} alt="Image of signs" className="card-img-top"/>
             </div>
             <div className="card-body text-dark">
-                <h3>{props.sign}</h3>
+                <h3 className="sign-name text-left">{props.sign}</h3>
                 <p className="text-left">
                     {props.comment}
                 </p>
