@@ -4,12 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './card-style.css'
 
 const Card = props => {
+    
     return (
         <div className="card text-center shadow">
             <div className="overflow">
-                <img src={props.imgsrc} alt="Image of signs" className="card-img-top"/>
+                <img src={require('../assets/' + props.imgsrc)} alt="Image of signs" className="card-img-top"/>
             </div>
             <div className="card-body text-dark">
+                <h3>{props.sign}</h3>
                 <p className="text-left">
                     {props.comment}
                 </p>
