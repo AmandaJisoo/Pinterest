@@ -5,10 +5,11 @@ import {MyTitle1} from './WarningHeader.js';
 import {BrowserRouter, Route, Switch, Link} from "react-router-dom";
 // import Card from './Cards/CardUI.js/index.js';
 import Cards from './Cards/Cards';
-import CommentOverview from './experience/CommentOverview';
+// import CommentOverview from './experience/CommentOverview';
 import Navi from './navCom/Navi.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {InspireContainer} from './Inspire/InspireContainer';
+import CommentsContainer from './commentConnect/CommentsContainer';
 import aboutProject from './aboutUs/aboutUs.js'
 // import {Divider} from '@material-ui/core';
 
@@ -25,7 +26,7 @@ export class App extends React.Component {
                     <Navi></Navi>
                     <Switch>
                     <Route exact path='/' component={Cards} />
-                    <Route exact path='/commentOverview' component={CommentOverview} />
+                    <Route exact path='/commentOverview' component={CommentsContainer} />
                     <Route exact path='/Inspire' component={InspireContainer} />
                     <Route exact path='/AboutUs' component={aboutProject} />
                     </Switch>
