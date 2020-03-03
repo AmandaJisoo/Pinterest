@@ -8,16 +8,10 @@ import Cards from './Cards/Cards';
 import CommentOverview from './experience/CommentOverview';
 import Navi from './navCom/Navi.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {InspireContainer} from './Inspire/InspireContainer';
+import aboutProject from './aboutUs/aboutUs.js'
 // import {Divider} from '@material-ui/core';
 
-import ReactDOM from 'react-dom'
- 
-// import { createStore, combineReducers, applyMiddleware } from 'redux'
-// import { Provider } from 'react-redux'
- 
-// import { ConnectedRouter, routerReducer, routerMiddleware, push } from 'react-router-redux'
- 
-// import reducers from './reducers' 
 
 export class App extends React.Component {
     // for index1 fix image render() {   return (     <div className="App">
@@ -32,6 +26,8 @@ export class App extends React.Component {
                     <Switch>
                     <Route exact path='/' component={Cards} />
                     <Route exact path='/commentOverview' component={CommentOverview} />
+                    <Route exact path='/Inspire' component={InspireContainer} />
+                    <Route exact path='/AboutUs' component={aboutProject} />
                     </Switch>
                 </div>
             </BrowserRouter> 

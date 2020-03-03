@@ -12,6 +12,8 @@ export default class Navi extends Component{
             <Nav>
                 <NavLink className="d-inline p-2 bg-dark text-white" to="/">HOME</NavLink>
                 <NavLink className="d-inline p-2 bg-dark text-white" to="/commentOverview">CONNECT</NavLink>
+                <NavLink className="d-inline p-2 bg-dark text-white" to="/Inspire">INSPIRE</NavLink>
+                <NavLink className="d-inline p-2 bg-dark text-white" to="/AboutUs">ABOUT US</NavLink>
             </Nav>
             </Navbar.Collapse>
             </Navbar>
