@@ -27,14 +27,8 @@ export class App extends React.Component {
         return (        
             <BrowserRouter>
                <div className="container">
-                   <h3 className= "m-3 d-flex justify-content-center">
-                       This is Nav bar
-                   </h3>
-                   <h5 className= "m-3 d-flex justify-content-center">
-                    Check
-                   </h5>
                    {/* this Navi is not working */}
-                    {/* <Navi></Navi> */}
+                    <Navi></Navi>
                     <Switch>
                     <Route exact path='/' component={Cards} />
                     <Route exact path='/commentOverview' component={CommentOverview} />

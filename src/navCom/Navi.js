@@ -7,7 +7,7 @@ export default class Navi extends Component{
         console.log("Hey");
         return(
             <Navbar bg="dark" expand="lg">
-            <Navbar.toggle aria-controls="basic-navbar-nav"></Navbar.toggle>
+            <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
                 <NavLink className="d-inline p-2 bg-dark text-white" to="/">HOME</NavLink>
